@@ -1,0 +1,87 @@
+.contacto {
+    width: 100%;
+    height: 750px;
+    margin: 8em 0 5em;
+}
+
+.logo-contacto {
+    width: 100%;
+    height: 250px;
+}
+
+.logo-contacto .cover-logo {
+    width: 12%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(../Image/icon.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.mensaje-contacto {
+    margin: 3rem 0 2rem;
+    text-align: center;
+}
+
+.mensaje-contacto span {
+    font-size: 30px;
+    text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.formulario { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formulario .mail {
+    width: 30%;
+    padding: 1em;
+    margin: 2em 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #140d0f;
+}
+
+.formulario .mensaje {
+    width: 40%;
+    padding: 1em;
+    margin: 2em 0;
+    outline: none;
+    border: .5px solid #140d0f;
+    border-radius: 3px;
+}
+
+.formulario .enviar {
+    cursor: pointer;
+    width: 100px;
+    background-color: #140d0f;
+    color: white;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 20em;
+    border-color: #140d0f;
+}
+
+@media screen and (max-width: 1500px){
+    .logo-contacto { height: 150px; }
+    .mensaje-contacto span { font-size: 20px; }
+    .formulario .mail { width: 40%; }
+    .formulario .mensaje { width: 50%; }
+}
+
+@media screen and (max-width: 1200px){
+    .logo-contacto { height: 130px; }
+    .logo-contacto .cover-logo { width: 13%; }
+}
+
+@media screen and (max-width: 900px){
+    .logo-contacto { height:150px; }
+    .logo-contacto .cover-logo { width: 20%; }
+}
+
+@media screen and (max-width: 610px){
+    .logo-contacto { height:100px; }
+}

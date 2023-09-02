@@ -1,0 +1,84 @@
+.section-welcome {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    overflow: hidden;
+}
+
+.image-welcome { 
+    width: 65%;
+    height: 100%;
+    background-image: url(../Image/img_1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.label-welcome { 
+    width: 35%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #140d0f;
+    
+}
+
+.label-welcome .frase {
+    padding: 1em 2em 1em;
+    margin: 0 5rem 3rem;
+    background-color: rgb(253, 253, 253);
+    text-shadow: 2px 2px 4px #161616;
+    text-align: justify;
+}
+
+.label-welcome .frase span{
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.label-welcome .libro-frase { margin: 0 5rem 0; }
+
+.label-welcome .libro-frase span{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    float: right;
+}
+
+@media screen and (max-width: 1500px){
+    .section-welcome {
+        height: 700px;
+    }
+    .label-welcome .frase span{ font-size: 15px; }
+    .label-welcome .libro-frase span{ font-size: 20px; }
+}
+
+@media screen and (max-width: 1200px){
+    .section-welcome { flex-direction: column; height:900px; }
+    .image-welcome,.label-welcome { width: 100%;}
+    .label-welcome { height: 50%;}
+}
+
+@media screen and (max-width: 730px){
+    .main { margin: 0 2em 0; }
+    .label-welcome .frase {
+        margin: 0 1px 1px;
+    }
+    .label-welcome .frase {
+        padding: 1em 1em 1em;
+        margin: 0 2rem 1rem;
+    }
+    .label-welcome .frase span{ font-size: 13px; }
+    .label-welcome .libro-frase span{ font-size: 20px; }
+}
+
+@media screen and (max-width: 360px){
+    .label-welcome .frase span{ font-size: 10px; }
+    .label-welcome .libro-frase { margin: 0 1rem 0; text-align: center;}
+    .label-welcome .libro-frase span { float: none; }
+}
+
+

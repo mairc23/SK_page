@@ -1,0 +1,65 @@
+.autor {
+    width: 100%;
+    height: auto;
+}   
+
+.autor .titulo-autor {
+    margin: 5rem 0 2rem;
+    text-align: center;
+}
+ 
+.autor .titulo-autor span {
+    font-size: 50px;
+    text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.biografia { 
+    width: 100%;
+    height: 680px;
+    display: flex; 
+}
+
+.autor-foto {
+    width: 20%;
+    height: 100%;
+    background-image: url(../Image/autor.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.autor-label {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+}
+
+.autor-label::-webkit-scrollbar { width: 5px; }
+.autor-label::-webkit-scrollbar-thumb {
+  background-color: #140d0f;
+  border-radius: 4px; 
+}
+
+.text-label {
+    padding: 1em;
+    text-align: justify;
+}
+
+.autor-label span {
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+@media screen and (max-width: 1500px){
+    .biografia { height: 500px; }
+    .autor-label span{ font-size: 13px; }
+    .label-welcome .libro-frase span{ font-size: 20px; }
+}
+
+@media screen and (max-width: 1200px){
+    .biografia { flex-direction: column; height:900px; }
+    .autor-foto,.autor-label { width: 100%;}
+    .autor-foto{ height: 150%;}
+    .autor-label { margin-top: 2em;}
+}

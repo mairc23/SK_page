@@ -1,0 +1,66 @@
+.logo {
+    width: 20%;
+    margin: 2em auto;
+}
+
+.logo .image-logo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header { position: sticky; top: 0; z-index: 1;}
+
+.main-navigation {
+    width: 100%;
+    margin: 0 auto;  
+}
+
+.main-navigation .list {
+    margin: 1em auto 1em;
+    text-align: center;
+}
+
+.main-navigation .list .list-item {
+    display: inline-block;
+    margin: 1em;
+}
+
+.list-item { cursor: pointer; }
+
+.list-item:hover span{ text-decoration: underline; }
+
+.header span {
+    color: rgb(7, 7, 7);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1500px){
+    .logo { width: 40%; }
+}
+
+@media screen and (max-width: 430px){
+    .header span { font-size: 13px; }
+}
+
+@media screen and (max-width: 375px){
+    .header span { font-size: 11px; }
+}
+
+@media screen and (max-width: 340px){
+    .header span { font-size: 10px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
